@@ -10,22 +10,27 @@ var User = function(name, email, pw){
   this.email = email;
   this.pw = pw;
 }
-
-//Create an Array called 'users' that will store all our instances of User.
-
-  //code here
-
-
-//Now create and push into your users array 3 separate instances of User using the data from above in that exact order
-
-  //code here
-
+var users = [];
+users.push(new User('Tyler', 'tylermcginnis33@gmail.com', 'iLoveJS'));
+users.push(new User('Cahlan', 'cahlan@devmounta.in', 'iLoveHashtags'));
+users.push(new User('Lenny', 'lenny@theLenster.com', 'iLoveLentilSoup'));
 console.log('Tyler\'s information is ');
+console.log(users[0]);
+console.log('Lenny\'s information is ');
+console.log(users[2]);
+console.log('All my users names are ');
+for (var i = 0; i < users.length; i++) {
+  console.log(users[i]);
+};
+//Create an Array called 'users' that will store all our instances of User.
+//Now create and push into your users array 3 separate instances of User using the data from above in that exact
+// order
+
 //Console.log all of Tylers information
 
   //code here
 
-console.log('Lenny\'s information is ');
+
 //Now console.log all of Lennys information
 
   //code here
@@ -35,7 +40,7 @@ console.log('Lenny\'s information is ');
 
   //code here
 
-console.log('All my users names are ');
+
 //Now loop through your users Array and console.log every users name. 
 
   //code here
